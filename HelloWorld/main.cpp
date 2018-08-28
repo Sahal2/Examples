@@ -6,7 +6,15 @@
 
 class HelloWorld
 {
+private:
+    std::string greeting;
+
 public:
+    HelloWorld():
+        greeting("Hello World...")
+    {
+    }
+
     /**
      * Greet the world.
      *
@@ -30,6 +38,6 @@ int main()
 
 bool HelloWorld::greet()
 {
-    std::cout << "Hello World!" << std::endl;
+    std::cout << greeting << std::endl;
     return std::cout.good(); // Return whether we were successful.
 }
