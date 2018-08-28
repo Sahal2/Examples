@@ -7,6 +7,11 @@
 class HelloWorld
 {
 public:
+    /**
+     * Greet the world.
+     *
+     * @return whether we were successful.
+     */
     bool greet();
 };
 
@@ -26,5 +31,5 @@ int main()
 bool HelloWorld::greet()
 {
     std::cout << "Hello World!" << std::endl;
-    return std::cout.good();
+    return std::cout.good(); // Return whether we were successful.
 }
