@@ -26,5 +26,5 @@ int main()
 bool HelloWorld::greet()
 {
     std::cout << "Hello World!" << std::endl;
-    return std::cout;
+    return std::cout.good();
 }
