@@ -38,6 +38,8 @@ int main()
 
 bool HelloWorld::greet()
 {
+    // Greet the world.
     std::cout << greeting << std::endl;
+    
     return std::cout.good(); // Return whether we were successful.
 }
